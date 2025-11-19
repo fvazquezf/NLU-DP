@@ -55,7 +55,8 @@ class Sample(object):
             state (State): The current parsing state.
             transition (Transition): The transition action corresponding to the state.
         """
-        self._state = state
+        # self._state = state
+        self._state = State(list(state.S), list(state.B), set(state.A))
         self._transition = transition
 
     @property
@@ -139,6 +140,8 @@ class Sample(object):
             str: A string representing the state and transition of the sample.
         """
         return f"Sample - State:\n\n{self._state}\nSample - Transition: {self._transition}"
+    def __repr__(self):
+        return self.__str__()
 
 
 
@@ -345,6 +348,7 @@ class ArcEager():
         while not self.final_state(state):
             
             if self.LA_is_valid(state) and self.LA_is_correct(state):
+                # transition = Transition(self.LA, state.B[0].dep)
                 transition = Transition(self.LA, state.S[-1].dep)
                 samples.append(Sample(state, transition))
                 self.apply_transition(state, transition)
@@ -365,7 +369,6 @@ class ArcEager():
                 samples.append(Sample(state, transition))
                 #Update the state by applying the SHIFT transition using the function apply_transition
                 self.apply_transition(state,transition)
-
 
         #When the oracle ends, the generated arcs must
         #match exactly the gold arcs, otherwise the obtained sequence of transitions is not correct

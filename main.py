@@ -104,7 +104,6 @@ else:
             print(f"  Processed {i + 1}/{len(train_trees)} sentences...", end='\r')
     
     print(f"\nGeneration complete. Total training samples: {len(training_samples)}")
-
     print("\nGenerating development samples using Arc-Eager Oracle...")
     dev_samples = []
     for i, tree in enumerate(dev_trees):
