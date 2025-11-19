@@ -1,5 +1,44 @@
 from conllu_reader import ConlluReader
 from algorithm import ArcEager
+import pickle
+
+def read_file(reader, path, inference):
+    trees = reader.read_conllu_file(path, inference)
+    print(f"Read a total of {len(trees)} sentences from {path}")
+    print (f"Printing the first sentence of the training set... trees[0] = {trees[0]}")
+    for token in trees[0]:
+        print (token)
+    print ()
+    return trees
+
+
+"""
+ALREADY IMPLEMENTED
+Read and convert CoNLLU files into tree structures
+"""
+# Initialize the ConlluReader
+reader = ConlluReader()
+train_trees = read_file(reader,path="en_partut-ud-train_clean.conllu", inference=False)
+dev_trees = read_file(reader,path="en_partut-ud-dev_clean.conllu", inference=False)
+test_trees = read_file(reader,path="en_partut-ud-test_clean.conllu", inference=True)
+
+"""
+We remove the non-projective sentences from the training and development set,
+as the Arc-Eager algorithm cannot parse non-projective sentences.
+
+We don't remove them from test set set, because for those we only will do inference
+"""
+train_trees = reader.remove_non_projective_trees(train_trees)
+dev_trees = reader.remove_non_projective_trees(dev_trees)
+
+print ("Total training trees after removing non-projective sentences", len(train_trees))
+print ("Total dev trees after removing non-projective sentences", len(dev_trees))
+
+
+import os
+import pickle
+from conllu_reader import ConlluReader
+from algorithm import ArcEager
 
 def read_file(reader, path, inference):
     trees = reader.read_conllu_file(path, inference)
@@ -35,34 +74,66 @@ print ("Total dev trees after removing non-projective sentences", len(dev_trees)
 
 #Create and instance of the ArcEager
 arc_eager = ArcEager()
-
 actions = {ArcEager.LA, ArcEager.RA, ArcEager.SHIFT, ArcEager.REDUCE}
+dataset_path = "dataset.pkl"
 
-# Extract all unique dependency labels (deprels) from the training data
-deprels = set()
-for tree in train_trees:
-    for token in tree:
-        if token.dep and token.dep != "_":
-            deprels.add(token.dep)
+if os.path.exists(dataset_path):
+    print(f"\nLoading existing dataset from {dataset_path}...")
+    with open(dataset_path, "rb") as f:
+        data = pickle.load(f)
+        training_samples = data["training_samples"]
+        dev_samples = data["dev_samples"]
+        deprels = data["deprels"]
+    print("Dataset loaded successfully.")
+else:
+    deprels = set()
+    for tree in train_trees:
+        for token in tree:
+            if token.dep and token.dep != "_":
+                deprels.add(token.dep)
 
-print(f"\nPossible Actions: {sorted(list(actions))}")
-print(f"Total unique dependency labels: {len(deprels)}")
+    print(f"\nPossible Actions: {sorted(list(actions))}")
+    print(f"Total unique dependency labels: {len(deprels)}")
 
-print("\nGenerating gold-standard transitions (training samples) using Arc-Eager Oracle...")
+    print("\nGenerating gold-standard transitions (training samples) using Arc-Eager Oracle...")
+    training_samples = []
+    for i, tree in enumerate(train_trees):
+        samples = arc_eager.oracle(tree) 
+        training_samples.extend(samples)
+        if (i + 1) % 100 == 0:
+            print(f"  Processed {i + 1}/{len(train_trees)} sentences...", end='\r')
+    
+    print(f"\nGeneration complete. Total training samples: {len(training_samples)}")
 
-training_samples = []
+    print("\nGenerating development samples using Arc-Eager Oracle...")
+    dev_samples = []
+    for i, tree in enumerate(dev_trees):
+        samples = arc_eager.oracle(tree)
+        dev_samples.extend(samples)
+        if (i + 1) % 100 == 0:
+            print(f"  Processed {i + 1}/{len(dev_trees)} sentences...", end='\r')
+    print(f"\nGeneration complete. Total dev samples: {len(dev_samples)}")
 
-for i, tree in enumerate(train_trees):
-    # The oracle function returns a list of Sample objects (State, Gold_Transition)
-    samples = arc_eager.oracle(tree) 
-    training_samples.extend(samples)
-    # Optional: Print progress
-    if (i + 1) % 100 == 0:
-        print(f"  Processed {i + 1}/{len(train_trees)} sentences...", end='\r')
-        print(tree)
+    print(f"Saving dataset to {dataset_path}...")
+    with open(dataset_path, "wb") as f:
+        pickle.dump({
+            "training_samples": training_samples,
+            "dev_samples": dev_samples,
+            "deprels": deprels,
+            "actions": actions
+        }, f)
+    print("Dataset saved.")
 
+# Validate length against outputSample
+expected_len = 81182
+current_len = len(training_samples)
 
-print(f"\nGeneration complete. Total training samples: {len(training_samples)}")
+print(f"\nValidation: Current training samples: {current_len} | Expected: {expected_len}")
+if current_len == expected_len:
+    print("SUCCESS: Sample count matches the expected output.")
+else:
+    print(f"WARNING: Sample count mismatch! Expected {expected_len}, but got {current_len}.")
+
 
 
 # TODO: Complete the ArcEager algorithm class.
