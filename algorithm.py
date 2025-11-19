@@ -345,18 +345,18 @@ class ArcEager():
         while not self.final_state(state):
             
             if self.LA_is_valid(state) and self.LA_is_correct(state):
-                transition = Transition(self.LA, state.B[0].dep)
-                samples.append(Sample(state.copy(), transition))
+                transition = Transition(self.LA, state.S[-1].dep)
+                samples.append(Sample(state, transition))
                 self.apply_transition(state, transition)
 
             elif self.RA_is_valid(state) and self.RA_is_correct(state):
                 transition = Transition(self.RA, state.B[0].dep)
-                samples.append(Sample(state.copy(), transition))
+                samples.append(Sample(state, transition))
                 self.apply_transition(state, transition)
 
             elif self.REDUCE_is_valid(state) and self.REDUCE_is_correct(state):
                 transition = Transition(self.REDUCE)
-                samples.append(Sample(state.copy(), transition))
+                samples.append(Sample(state, transition))
                 self.apply_transition(state, transition)
             else:
                 #If no other transiton can be applied, it's a SHIFT transition
@@ -415,7 +415,7 @@ class ArcEager():
             state.S.append(b)
             del state.B[0]
 
-        elif t == self.REDUCE and self.has_head(s, state.A): 
+        elif t == self.REDUCE and self.REDUCE_is_valid(state): 
             # REDUCE transition logic: to be implemented
             # Remove from state the word from the top of the stack
             state.S.pop()

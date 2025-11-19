@@ -36,7 +36,34 @@ print ("Total dev trees after removing non-projective sentences", len(dev_trees)
 #Create and instance of the ArcEager
 arc_eager = ArcEager()
 
-print ("\n ------ TODO: Implement the rest of the assignment ------")
+actions = {ArcEager.LA, ArcEager.RA, ArcEager.SHIFT, ArcEager.REDUCE}
+
+# Extract all unique dependency labels (deprels) from the training data
+deprels = set()
+for tree in train_trees:
+    for token in tree:
+        if token.dep and token.dep != "_":
+            deprels.add(token.dep)
+
+print(f"\nPossible Actions: {sorted(list(actions))}")
+print(f"Total unique dependency labels: {len(deprels)}")
+
+print("\nGenerating gold-standard transitions (training samples) using Arc-Eager Oracle...")
+
+training_samples = []
+
+for i, tree in enumerate(train_trees):
+    # The oracle function returns a list of Sample objects (State, Gold_Transition)
+    samples = arc_eager.oracle(tree) 
+    training_samples.extend(samples)
+    # Optional: Print progress
+    if (i + 1) % 100 == 0:
+        print(f"  Processed {i + 1}/{len(train_trees)} sentences...", end='\r')
+        print(tree)
+
+
+print(f"\nGeneration complete. Total training samples: {len(training_samples)}")
+
 
 # TODO: Complete the ArcEager algorithm class.
 # 1. Implement the 'oracle' function and auxiliary functions to determine the correct parser actions.

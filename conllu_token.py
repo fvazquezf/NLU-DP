@@ -138,4 +138,6 @@ class Token():
             """
             return "\t".join(map(str, [self.id, self.form, self.lemma, self.upos, self.cpos, self.feats, self.head, self.dep, self.deps, self.misc]))
     
+    def __repr__(self):
+        return self.__str__()
 

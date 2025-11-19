@@ -1,0 +1,541 @@
+Read a total of 1781 sentences from en_partut-ud-train_clean.conllu
+Printing the first sentence of the training set... trees[0] = [0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Distribution	distribution	NOUN	S	Number=Sing	7	nsubj	_	_,
+ 2	of	of	ADP	E	_	4	case	_	_,
+ 3	this	this	DET	DD	Number=Sing|PronType=Dem	4	det	_	_,
+ 4	license	license	NOUN	S	Number=Sing	1	nmod	_	_,
+ 5	does	do	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_,
+ 6	not	not	PART	PART	Polarity=Neg	7	advmod	_	_,
+ 7	create	create	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_,
+ 8	an	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	12	det	_	_,
+ 9	attorney	attorney	NOUN	S	Number=Sing	12	nmod	_	_,
+ 10	-	-	PUNCT	FF	_	9	punct	_	_,
+ 11	client	client	NOUN	S	Number=Sing	9	compound	_	_,
+ 12	relationship	relationship	NOUN	S	Number=Sing	7	obj	_	_,
+ 13	.	.	PUNCT	FS	_	7	punct	_	_]
+0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_
+1	Distribution	distribution	NOUN	S	Number=Sing	7	nsubj	_	_
+2	of	of	ADP	E	_	4	case	_	_
+3	this	this	DET	DD	Number=Sing|PronType=Dem	4	det	_	_
+4	license	license	NOUN	S	Number=Sing	1	nmod	_	_
+5	does	do	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_
+6	not	not	PART	PART	Polarity=Neg	7	advmod	_	_
+7	create	create	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	an	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	12	det	_	_
+9	attorney	attorney	NOUN	S	Number=Sing	12	nmod	_	_
+10	-	-	PUNCT	FF	_	9	punct	_	_
+11	client	client	NOUN	S	Number=Sing	9	compound	_	_
+12	relationship	relationship	NOUN	S	Number=Sing	7	obj	_	_
+13	.	.	PUNCT	FS	_	7	punct	_	_
+
+Read a total of 156 sentences from en_partut-ud-dev_clean.conllu
+Printing the first sentence of the training set... trees[0] = [0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Creative	Creative	PROPN	SP	_	3	nmod	_	_,
+ 2	Commons	Commons	PROPN	SP	_	1	flat	_	_,
+ 3	Corporation	corporation	NOUN	S	Number=Sing	8	nsubj	_	_,
+ 4	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_,
+ 5	not	not	PART	PART	Polarity=Neg	8	advmod	_	_,
+ 6	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	8	det	_	_,
+ 7	law	law	NOUN	S	Number=Sing	8	nmod	_	_,
+ 8	firm	firm	NOUN	S	Number=Sing	0	root	_	_,
+ 9	and	and	CCONJ	CC	_	12	cc	_	_,
+ 10	does	do	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_,
+ 11	not	not	PART	PART	Polarity=Neg	12	advmod	_	_,
+ 12	provide	provide	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	8	conj	_	_,
+ 13	legal	legal	ADJ	A	Degree=Pos	14	amod	_	_,
+ 14	services	service	NOUN	S	Number=Plur	12	obj	_	_,
+ 15	.	.	PUNCT	FS	_	8	punct	_	_]
+0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_
+1	Creative	Creative	PROPN	SP	_	3	nmod	_	_
+2	Commons	Commons	PROPN	SP	_	1	flat	_	_
+3	Corporation	corporation	NOUN	S	Number=Sing	8	nsubj	_	_
+4	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	8	cop	_	_
+5	not	not	PART	PART	Polarity=Neg	8	advmod	_	_
+6	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	8	det	_	_
+7	law	law	NOUN	S	Number=Sing	8	nmod	_	_
+8	firm	firm	NOUN	S	Number=Sing	0	root	_	_
+9	and	and	CCONJ	CC	_	12	cc	_	_
+10	does	do	AUX	VM	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	12	aux	_	_
+11	not	not	PART	PART	Polarity=Neg	12	advmod	_	_
+12	provide	provide	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	8	conj	_	_
+13	legal	legal	ADJ	A	Degree=Pos	14	amod	_	_
+14	services	service	NOUN	S	Number=Plur	12	obj	_	_
+15	.	.	PUNCT	FS	_	8	punct	_	_
+
+Read a total of 153 sentences from en_partut-ud-test_clean.conllu
+Printing the first sentence of the training set... trees[0] = [0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Attribution	attribution	NOUN	S	Number=Sing	_	_	_	_,
+ 2	-	-	PUNCT	FF	_	_	_	_	_,
+ 3	ShareAlike	ShareAlike	PROPN	SP	_	_	_	_	_,
+ 4	2.0	2.0	NUM	N	NumType=Card	_	_	_	_,
+ 5	.	.	PUNCT	FS	_	_	_	_	_]
+0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_
+1	Attribution	attribution	NOUN	S	Number=Sing	_	_	_	_
+2	-	-	PUNCT	FF	_	_	_	_	_
+3	ShareAlike	ShareAlike	PROPN	SP	_	_	_	_	_
+4	2.0	2.0	NUM	N	NumType=Card	_	_	_	_
+5	.	.	PUNCT	FS	_	_	_	_	_
+
+Total training trees after removing non-projective sentences 1748
+Total dev trees after removing non-projective sentences 152
+
+Possible Actions: ['LEFT-ARC', 'REDUCE', 'RIGHT-ARC', 'SHIFT']
+Total unique dependency labels: 43
+
+Generating gold-standard transitions (training samples) using Arc-Eager Oracle...
+  
+  Processed 100/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Mrs	mrs	NOUN	S	Gender=Fem|Number=Sing	7	vocative	_	_,
+ 2	Lynne	Lynne	PROPN	SP	_	1	flat	_	_,
+ 3	,	,	PUNCT	FF	_	1	punct	_	_,
+ 4	you	you	PRON	PE	Person=2|PronType=Prs	7	nsubj	_	_,
+ 5	are	be	AUX	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	7	cop	_	_,
+ 6	quite	quite	ADV	B	_	7	advmod	_	_,
+ 7	right	right	ADJ	A	Degree=Pos	0	root	_	_,
+ 8	and	and	CCONJ	CC	_	11	cc	_	_,
+ 9	I	I	PRON	PE	Number=Sing|Person=1|PronType=Prs	11	nsubj	_	_,
+ 10	shall	shall	AUX	VM	Mood=Ind|Person=3|Tense=Pres|VerbForm=Fin	11	aux	_	_,
+ 11	check	check	VERB	V	VerbForm=Inf	7	conj	_	_,
+ 12	whether	whether	SCONJ	CS	_	18	mark	_	_,
+ 13	this	this	PRON	PD	Number=Sing|PronType=Dem	18	nsubj:pass	_	_,
+ 14	has	have	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_,
+ 15	actually	actually	ADV	B	_	18	advmod	_	_,
+ 16	not	not	PART	PART	Polarity=Neg	18	advmod	_	_,
+ 17	been	be	AUX	VA	Tense=Past|VerbForm=Part	18	aux	_	_,
+ 18	done	do	VERB	V	Tense=Past|VerbForm=Part	11	ccomp	_	_,
+ 19	.	.	PUNCT	FS	_	7	punct	_	_]
+  
+  Processed 200/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	My	my	DET	AP	Number=Sing|Poss=Yes|PronType=Prs	3	nmod:poss	_	_,
+ 2	third	third	ADJ	NO	Degree=Pos|NumType=Ord	3	amod	_	_,
+ 3	point	point	NOUN	S	Number=Sing	7	nsubj:pass	_	_,
+ 4	has	have	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	aux	_	_,
+ 5	also	also	ADV	B	_	7	advmod	_	_,
+ 6	been	be	AUX	VA	Tense=Past|VerbForm=Part	7	aux:pass	_	_,
+ 7	mentioned	mention	VERB	V	Tense=Past|VerbForm=Part	0	root	_	_,
+ 8	already	already	ADV	B	_	7	advmod	_	_,
+ 9	.	.	PUNCT	FS	_	7	punct	_	_]
+  
+  Processed 300/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	The	the	DET	RD	Definite=Def|PronType=Art	2	det	_	_,
+ 2	consequences	consequence	NOUN	S	Number=Plur	5	nsubj	_	_,
+ 3	do	do	AUX	VA	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	5	aux	_	_,
+ 4	not	not	PART	PART	Polarity=Neg	5	advmod	_	_,
+ 5	inspire	inspire	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_,
+ 6	hope	hope	NOUN	S	Number=Sing	5	obj	_	_,
+ 7	.	.	PUNCT	FS	_	5	punct	_	_]
+  
+  Processed 400/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Before	before	ADP	E	_	3	mark	_	_,
+ 2	you	you	PRON	PE	Person=2|PronType=Prs	3	nsubj	_	_,
+ 3	sign	sign	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_,
+ 4	up	up	ADP	E	_	3	compound:prt	_	_,
+ 5	.	.	PUNCT	FS	_	3	punct	_	_]
+  
+  Processed 500/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	(	(	PUNCT	FB	_	2	punct	_	_,
+ 2	2	2	NUM	N	NumType=Card	11	nummod	_	_,
+ 3	)	)	PUNCT	FB	_	2	punct	_	_,
+ 4	Energy	energy	NOUN	S	Number=Sing	6	obj	_	_,
+ 5	-	-	PUNCT	FF	_	4	punct	_	_,
+ 6	using	use	VERB	V	Tense=Pres|VerbForm=Part	7	acl	_	_,
+ 7	products	product	NOUN	S	Number=Plur	11	nsubj	_	_,
+ 8	(	(	PUNCT	FB	_	9	punct	_	_,
+ 9	EUPs	EUP	PROPN	SP	_	7	nmod	_	_,
+ 10	)	)	PUNCT	FB	_	9	punct	_	_,
+ 11	account	account	VERB	V	Mood=Ind|Number=Plur|Tense=Pres|VerbForm=Fin	0	root	_	_,
+ 12	for	for	ADP	E	_	15	case	_	_,
+ 13	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	15	det	_	_,
+ 14	large	large	ADJ	A	Degree=Pos	15	amod	_	_,
+ 15	proportion	proportion	NOUN	S	Number=Sing	11	obl	_	_,
+ 16	of	of	ADP	E	_	18	case	_	_,
+ 17	the	the	DET	RD	Definite=Def|PronType=Art	18	det	_	_,
+ 18	consumption	consumption	NOUN	S	Number=Sing	15	nmod	_	_,
+ 19	of	of	ADP	E	_	21	case	_	_,
+ 20	natural	natural	ADJ	A	Degree=Pos	21	amod	_	_,
+ 21	resources	resource	NOUN	S	Number=Plur	18	nmod	_	_,
+ 22	and	and	CCONJ	CC	_	23	cc	_	_,
+ 23	energy	energy	NOUN	S	Number=Sing	21	conj	_	_,
+ 24	in	in	ADP	E	_	26	case	_	_,
+ 25	the	the	DET	RD	Definite=Def|PronType=Art	26	det	_	_,
+ 26	Community	community	NOUN	S	Number=Sing	18	nmod	_	_,
+ 27	.	.	PUNCT	FS	_	11	punct	_	_]
+  
+  Processed 600/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	A	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	3	det	_	_,
+ 2	second	second	ADJ	NO	Degree=Pos|NumType=Ord	3	amod	_	_,
+ 3	evaluation	evaluation	NOUN	S	Number=Sing	5	nsubj	_	_,
+ 4	should	shall	AUX	VM	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	5	aux	_	_,
+ 5	take	take	VERB	V	VerbForm=Inf	0	root	_	_,
+ 6	place	place	NOUN	S	Number=Sing	5	obj	_	_,
+ 7	after	after	ADP	E	_	9	case	_	_,
+ 8	four	four	NUM	N	NumType=Card	9	nummod	_	_,
+ 9	years	year	NOUN	S	Number=Plur	5	obl	_	_,
+ 10	.	.	PUNCT	FS	_	5	punct	_	_]
+  
+  Processed 700/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	this	this	DET	DD	Number=Sing|PronType=Dem	2	det	_	_,
+ 2	right	right	NOUN	S	Number=Sing	3	nsubj	_	_,
+ 3	includes	include	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_,
+ 4	freedom	freedom	NOUN	S	Number=Sing	3	obj	_	_,
+ 5	to	to	PART	PART	_	6	mark	_	_,
+ 6	change	change	VERB	V	VerbForm=Inf	4	acl	_	_,
+ 7	his	his	DET	AP	Poss=Yes|PronType=Prs	8	nmod:poss	_	_,
+ 8	religion	religion	NOUN	S	Number=Sing	6	obj	_	_,
+ 9	or	or	CCONJ	CC	_	10	cc	_	_,
+ 10	belief	belief	NOUN	S	Number=Sing	8	conj	_	_,
+ 11	,	,	PUNCT	FF	_	13	punct	_	_,
+ 12	and	and	CCONJ	CC	_	13	cc	_	_,
+ 13	freedom	freedom	NOUN	S	Number=Sing	10	conj	_	_,
+ 14	,	,	PUNCT	FF	_	13	punct	_	_,
+ 15	either	either	CCONJ	CC	_	16	cc	_	_,
+ 16	alone	alone	ADV	B	_	29	advmod	_	_,
+ 17	or	or	CCONJ	CC	_	19	cc	_	_,
+ 18	in	in	ADP	E	_	19	case	_	_,
+ 19	community	community	NOUN	S	Number=Sing	16	conj	_	_,
+ 20	with	with	ADP	E	_	21	case	_	_,
+ 21	others	other	PRON	PI	Number=Plur|PronType=Ind	19	nmod	_	_,
+ 22	and	and	CCONJ	CC	_	23	cc	_	_,
+ 23	in	in	ADP	E	_	19	conj	_	_,
+ 24	public	public	ADJ	A	Degree=Pos	16	conj	_	_,
+ 25	or	or	CCONJ	CC	_	26	cc	_	_,
+ 26	private	private	ADJ	A	Degree=Pos	16	conj	_	_,
+ 27	,	,	PUNCT	FF	_	16	punct	_	_,
+ 28	to	to	PART	PART	_	29	mark	_	_,
+ 29	manifest	manifest	VERB	V	VerbForm=Inf	13	acl	_	_,
+ 30	his	his	DET	AP	Poss=Yes|PronType=Prs	31	nmod:poss	_	_,
+ 31	religion	religion	NOUN	S	Number=Sing	29	obj	_	_,
+ 32	or	or	CCONJ	CC	_	33	cc	_	_,
+ 33	belief	belief	NOUN	S	Number=Sing	31	conj	_	_,
+ 34	in	in	ADP	E	_	35	case	_	_,
+ 35	teaching	teaching	NOUN	S	Number=Sing	33	nmod	_	_,
+ 36	,	,	PUNCT	FF	_	37	punct	_	_,
+ 37	practice	practice	NOUN	S	Number=Sing	35	conj	_	_,
+ 38	,	,	PUNCT	FF	_	39	punct	_	_,
+ 39	worship	worship	NOUN	S	Number=Sing	35	conj	_	_,
+ 40	and	and	CCONJ	CC	_	41	cc	_	_,
+ 41	observance	observance	NOUN	S	Number=Sing	35	conj	_	_,
+ 42	.	.	PUNCT	FS	_	3	punct	_	_]
+  
+  Processed 800/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Governments	government	NOUN	S	Number=Plur	15	nsubj:pass	_	_,
+ 2	that	that	PRON	PR	PronType=Rel	3	nsubj	_	_,
+ 3	enjoyed	enjoy	VERB	V	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	1	acl:relcl	_	_,
+ 4	the	the	DET	RD	Definite=Def|PronType=Art	6	det	_	_,
+ 5	rollercoaster	rollercoaster	NOUN	S	Number=Sing	6	nmod	_	_,
+ 6	ride	ride	NOUN	S	Number=Sing	3	obj	_	_,
+ 7	on	on	ADP	E	_	9	case	_	_,
+ 8	the	the	DET	RD	Definite=Def|PronType=Art	9	det	_	_,
+ 9	way	way	NOUN	S	Number=Sing	3	obl	_	_,
+ 10	up	up	ADV	B	_	9	advmod	_	_,
+ 11	should	shall	AUX	VM	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	15	aux	_	_,
+ 12	not	not	PART	PART	Polarity=Neg	15	advmod	_	_,
+ 13	have	have	AUX	VA	VerbForm=Inf	15	aux	_	_,
+ 14	been	be	AUX	VA	Tense=Past|VerbForm=Part	15	aux:pass	_	_,
+ 15	surprised	surprise	VERB	V	Tense=Past|VerbForm=Part	0	root	_	_,
+ 16	by	by	ADP	E	_	18	case	_	_,
+ 17	the	the	DET	RD	Definite=Def|PronType=Art	18	det	_	_,
+ 18	plunge	plunge	NOUN	S	Number=Sing	15	obl	_	_,
+ 19	that	that	PRON	PR	PronType=Rel	21	nsubj	_	_,
+ 20	inevitably	inevitably	ADV	B	_	21	advmod	_	_,
+ 21	follows	follow	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	acl:relcl	_	_,
+ 22	.	.	PUNCT	FS	_	15	punct	_	_]
+  
+  Processed 900/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	The	the	DET	RD	Definite=Def|PronType=Art	2	det	_	_,
+ 2	foundation	foundation	NOUN	S	Number=Sing	5	nsubj	_	_,
+ 3	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	5	cop	_	_,
+ 4	now	now	ADV	B	_	5	advmod	_	_,
+ 5	ready	ready	ADJ	A	Degree=Pos	0	root	_	_,
+ 6	to	to	PART	PART	_	7	mark	_	_,
+ 7	support	support	VERB	V	VerbForm=Inf	5	advcl	_	_,
+ 8	Ukrainians	Ukrainians	PROPN	SP	_	12	nmod	_	_,
+ 9	'	'	PART	PART	_	8	case	_	_,
+ 10	strongly	strongly	ADV	B	_	11	advmod	_	_,
+ 11	felt	felt	VERB	V	Tense=Past|VerbForm=Part	12	acl	_	_,
+ 12	desire	desire	NOUN	S	Number=Sing	7	obj	_	_,
+ 13	to	to	PART	PART	_	14	mark	_	_,
+ 14	establish	establish	VERB	V	VerbForm=Inf	12	acl	_	_,
+ 15	resilient	resilient	ADJ	A	Degree=Pos	17	amod	_	_,
+ 16	democratic	democratic	ADJ	A	Degree=Pos	17	amod	_	_,
+ 17	institutions	institution	NOUN	S	Number=Plur	14	obj	_	_,
+ 18	(	(	PUNCT	FB	_	26	punct	_	_,
+ 19	above	above	ADP	E	_	20	case	_	_,
+ 20	all	all	PRON	PI	PronType=Ind	26	nmod	_	_,
+ 21	,	,	PUNCT	FF	_	20	punct	_	_,
+ 22	an	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	26	det	_	_,
+ 23	independent	independent	ADJ	A	Degree=Pos	26	amod	_	_,
+ 24	and	and	CCONJ	CC	_	25	cc	_	_,
+ 25	professional	professional	ADJ	A	Degree=Pos	23	conj	_	_,
+ 26	judiciary	judiciary	NOUN	S	Number=Sing	17	nmod	_	_,
+ 27	)	)	PUNCT	FB	_	26	punct	_	_,
+ 28	.	.	PUNCT	FS	_	5	punct	_	_]
+  
+  Processed 1000/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Given	give	VERB	V	Tense=Past|VerbForm=Part	20	advcl	_	_,
+ 2	that	that	SCONJ	CS	_	7	mark	_	_,
+ 3	financial	financial	ADJ	A	Degree=Pos	4	amod	_	_,
+ 4	institutions	institution	NOUN	S	Number=Plur	7	nsubj	_	_,
+ 5	had	have	AUX	VA	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	7	aux	_	_,
+ 6	been	be	AUX	VA	Tense=Past|VerbForm=Part	7	aux	_	_,
+ 7	attracting	attract	VERB	V	VerbForm=Ger	1	csubj:pass	_	_,
+ 8	the	the	DET	RD	Definite=Def|PronType=Art	9	det	_	_,
+ 9	best	best	ADJ	A	Degree=Sup	7	obj	_	_,
+ 10	and	and	CCONJ	CC	_	11	cc	_	_,
+ 11	brightest	brightest	ADJ	A	Degree=Sup	9	conj	_	_,
+ 12	from	from	ADP	E	_	15	case	_	_,
+ 13	around	around	ADP	E	_	12	fixed	_	_,
+ 14	the	the	DET	RD	Definite=Def|PronType=Art	15	det	_	_,
+ 15	world	world	NOUN	S	Number=Sing	7	obl	_	_,
+ 16	,	,	PUNCT	FF	_	1	punct	_	_,
+ 17	one	one	PRON	PE	Number=Sing|Person=3|PronType=Prs	20	nsubj	_	_,
+ 18	would	will	AUX	VM	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	20	aux	_	_,
+ 19	have	have	AUX	VA	VerbForm=Inf	20	aux	_	_,
+ 20	expected	expect	VERB	V	Tense=Past|VerbForm=Part	0	root	_	_,
+ 21	nothing	nothing	PRON	PI	Number=Sing|PronType=Ind	20	obj	_	_,
+ 22	less	less	ADV	B	Degree=Cmp	21	advmod	_	_,
+ 23	.	.	PUNCT	FS	_	20	punct	_	_]
+  
+  Processed 1100/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	In	in	ADP	E	_	2	case	_	_,
+ 2	fact	fact	NOUN	S	Number=Sing	5	obl	_	_,
+ 3	,	,	PUNCT	FF	_	2	punct	_	_,
+ 4	agriculture	agriculture	NOUN	S	Number=Sing	5	nsubj	_	_,
+ 5	offers	offer	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_,
+ 6	the	the	DET	RD	Definite=Def|PronType=Art	7	det	_	_,
+ 7	continent	continent	NOUN	S	Number=Sing	5	iobj	_	_,
+ 8	its	its	DET	AP	Number=Sing|Poss=Yes|PronType=Prs	10	nmod:poss	_	_,
+ 9	best	best	ADJ	A	Degree=Sup	10	amod	_	_,
+ 10	opportunity	opportunity	NOUN	S	Number=Sing	5	obj	_	_,
+ 11	to	to	PART	PART	_	12	mark	_	_,
+ 12	turn	turn	VERB	V	VerbForm=Inf	10	acl	_	_,
+ 13	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	15	det	_	_,
+ 14	vicious	vicious	ADJ	A	Degree=Pos	15	amod	_	_,
+ 15	cycle	cycle	NOUN	S	Number=Sing	12	obj	_	_,
+ 16	of	of	ADP	E	_	17	case	_	_,
+ 17	poverty	poverty	NOUN	S	Number=Sing	15	nmod	_	_,
+ 18	into	into	ADP	E	_	21	case	_	_,
+ 19	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	21	det	_	_,
+ 20	virtuous	virtuous	ADJ	A	Degree=Pos	21	amod	_	_,
+ 21	cycle	cycle	NOUN	S	Number=Sing	12	obl	_	_,
+ 22	of	of	ADP	E	_	23	case	_	_,
+ 23	development	development	NOUN	S	Number=Sing	21	nmod	_	_,
+ 24	.	.	PUNCT	FS	_	5	punct	_	_]
+  
+  Processed 1200/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Nor	nor	CCONJ	CC	_	4	cc	_	_,
+ 2	is	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	_	_,
+ 3	it	it	PRON	PE	Number=Sing|Person=3|PronType=Prs	4	nsubj	_	_,
+ 4	Kosovo	Kosovo	PROPN	SP	_	0	root	_	_,
+ 5	,	,	PUNCT	FF	_	4	punct	_	_,
+ 6	which	which	PRON	PR	PronType=Rel	7	nsubj	_	_,
+ 7	became	become	VERB	V	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	4	acl:relcl	_	_,
+ 8	independent	independent	ADJ	A	Degree=Pos	7	xcomp	_	_,
+ 9	at	at	ADP	E	_	12	case	_	_,
+ 10	the	the	DET	RD	Definite=Def|PronType=Art	12	det	_	_,
+ 11	same	same	ADJ	A	Degree=Pos	12	amod	_	_,
+ 12	time	time	NOUN	S	Number=Sing	7	obl	_	_,
+ 13	that	that	SCONJ	CS	_	19	mark	_	_,
+ 14	its	its	DET	AP	Number=Sing|Poss=Yes|PronType=Prs	16	nmod:poss	_	_,
+ 15	governmental	governmental	ADJ	A	Degree=Pos	16	amod	_	_,
+ 16	structures	structure	NOUN	S	Number=Plur	19	nsubj:pass	_	_,
+ 17	were	be	AUX	VA	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	19	aux	_	_,
+ 18	being	be	AUX	VA	VerbForm=Ger	19	aux:pass	_	_,
+ 19	forged	forge	VERB	V	Tense=Past|VerbForm=Part	12	acl	_	_,
+ 20	.	.	PUNCT	FS	_	4	punct	_	_]
+  
+  Processed 1300/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	"	"	PUNCT	FB	_	4	punct	_	_,
+ 2	Balzac	Balzac	PROPN	SP	_	4	nsubj	_	_,
+ 3	himself	he	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	nmod	_	_,
+ 4	attributed	attribute	VERB	V	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_,
+ 5	his	his	DET	AP	Poss=Yes|PronType=Prs	6	nmod:poss	_	_,
+ 6	condition	condition	NOUN	S	Number=Sing	4	obj	_	_,
+ 7	to	to	ADP	E	_	10	case	_	_,
+ 8	"	"	PUNCT	FB	_	10	punct	_	_,
+ 9	intellectual	intellectual	ADJ	A	Degree=Pos	10	amod	_	_,
+ 10	congestion	congestion	NOUN	S	Number=Sing	4	obl	_	_,
+ 11	"	"	PUNCT	FB	_	10	punct	_	_,
+ 12	,	,	PUNCT	FF	_	25	punct	_	_,
+ 13	but	but	CCONJ	CC	_	25	cc	_	_,
+ 14	his	his	DET	AP	Poss=Yes|PronType=Prs	16	nmod:poss	_	_,
+ 15	extended	extended	ADJ	A	Degree=Pos	16	amod	_	_,
+ 16	confinement	confinement	NOUN	S	Number=Sing	25	nsubj	_	_,
+ 17	in	in	ADP	E	_	20	case	_	_,
+ 18	the	the	DET	RD	Definite=Def|PronType=Art	20	det	_	_,
+ 19	"	"	PUNCT	FB	_	20	punct	_	_,
+ 20	alcove	alcove	NOUN	S	Number=Sing	16	nmod	_	_,
+ 21	"	"	PUNCT	FB	_	20	punct	_	_,
+ 22	was	be	AUX	V	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	25	cop	_	_,
+ 23	surely	surely	ADV	B	_	25	advmod	_	_,
+ 24	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	25	det	_	_,
+ 25	factor	factor	NOUN	S	Number=Sing	4	conj	_	_,
+ 26	.	.	PUNCT	FS	_	4	punct	_	_]
+  
+  Processed 1400/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Many	many	PRON	PI	Number=Plur|PronType=Ind	8	nsubj:pass	_	_,
+ 2	of	of	ADP	E	_	6	case	_	_,
+ 3	Balzac	Balzac	PROPN	SP	_	6	nmod	_	_,
+ 4	's	's	PART	PART	_	3	case	_	_,
+ 5	tormented	torment	VERB	V	Tense=Past|VerbForm=Part	6	acl	_	_,
+ 6	characters	character	NOUN	S	Number=Plur	1	nmod	_	_,
+ 7	were	be	AUX	VA	Mood=Ind|Number=Plur|Tense=Past|VerbForm=Fin	8	aux:pass	_	_,
+ 8	created	create	VERB	V	Tense=Past|VerbForm=Part	0	root	_	_,
+ 9	in	in	ADP	E	_	15	case	_	_,
+ 10	the	the	DET	RD	Definite=Def|PronType=Art	15	det	_	_,
+ 11	small	small	ADJ	A	Degree=Pos	15	amod	_	_,
+ 12	second	second	ADJ	NO	Degree=Pos|NumType=Ord	14	amod	_	_,
+ 13	-	-	PUNCT	FF	_	14	punct	_	_,
+ 14	floor	floor	NOUN	S	Number=Sing	15	nmod	_	_,
+ 15	bedroom	bedroom	NOUN	S	Number=Sing	8	obl	_	_,
+ 16	.	.	PUNCT	FS	_	8	punct	_	_]
+  
+  Processed 1500/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Between	between	ADP	E	_	2	case	_	_,
+ 2	1585	1585	NUM	N	NumType=Card	7	obl	_	_,
+ 3	and	and	CCONJ	CC	_	4	cc	_	_,
+ 4	1592	1592	NUM	N	NumType=Card	2	conj	_	_,
+ 5	,	,	PUNCT	FF	_	2	punct	_	_,
+ 6	he	he	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	7	nsubj	_	_,
+ 7	began	begin	VERB	V	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_,
+ 8	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	10	det	_	_,
+ 9	successful	successful	ADJ	A	Degree=Pos	10	amod	_	_,
+ 10	career	career	NOUN	S	Number=Sing	7	obj	_	_,
+ 11	in	in	ADP	E	_	12	case	_	_,
+ 12	London	London	PROPN	SP	_	7	obl	_	_,
+ 13	as	as	ADP	E	_	15	case	_	_,
+ 14	an	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	15	det	_	_,
+ 15	actor	actor	NOUN	S	Number=Sing	7	obl	_	_,
+ 16	,	,	PUNCT	FF	_	17	punct	_	_,
+ 17	writer	writer	NOUN	S	Number=Sing	15	conj	_	_,
+ 18	,	,	PUNCT	FF	_	22	punct	_	_,
+ 19	and	and	CCONJ	CC	_	22	cc	_	_,
+ 20	part	part	ADJ	A	Degree=Pos	22	amod	_	_,
+ 21	-	-	PUNCT	FF	_	22	punct	_	_,
+ 22	owner	owner	NOUN	S	Number=Sing	15	conj	_	_,
+ 23	of	of	ADP	E	_	26	case	_	_,
+ 24	a	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	26	det	_	_,
+ 25	playing	playing	NOUN	S	Number=Sing	26	nmod	_	_,
+ 26	company	company	NOUN	S	Number=Sing	22	nmod	_	_,
+ 27	called	call	VERB	V	Tense=Past|VerbForm=Part	26	acl	_	_,
+ 28	the	the	DET	RD	Definite=Def|PronType=Art	29	det	_	_,
+ 29	Lord	lord	NOUN	S	Number=Sing	32	nmod	_	_,
+ 30	Chamberlain	Chamberlain	PROPN	SP	_	29	nmod	_	_,
+ 31	's	's	PART	PART	_	30	case	_	_,
+ 32	Men	man	NOUN	S	Gender=Masc|Number=Plur	27	obl	_	_,
+ 33	,	,	PUNCT	FF	_	27	punct	_	_,
+ 34	later	later	ADV	B	Degree=Cmp	35	advmod	_	_,
+ 35	known	know	VERB	V	Tense=Past|VerbForm=Part	27	advcl	_	_,
+ 36	as	as	ADP	E	_	40	case	_	_,
+ 37	the	the	DET	RD	Definite=Def|PronType=Art	38	det	_	_,
+ 38	King	king	NOUN	S	Gender=Masc|Number=Sing	40	nmod	_	_,
+ 39	's	's	PART	PART	_	38	case	_	_,
+ 40	Men	man	NOUN	S	Gender=Masc|Number=Plur	27	obl	_	_,
+ 41	.	.	PUNCT	FS	_	7	punct	_	_]
+  
+  Processed 1600/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	The	the	DET	RD	Definite=Def|PronType=Art	3	det	_	_,
+ 2	titular	titular	ADJ	A	Degree=Pos	3	amod	_	_,
+ 3	hero	hero	NOUN	S	Gender=Masc|Number=Sing	18	nsubj:pass	_	_,
+ 4	of	of	ADP	E	_	5	case	_	_,
+ 5	one	one	NUM	N	NumType=Card	3	nummod	_	_,
+ 6	of	of	ADP	E	_	11	case	_	_,
+ 7	Shakespeare	Shakespeare	PROPN	SP	_	11	nmod	_	_,
+ 8	's	's	PART	PART	_	7	case	_	_,
+ 9	most	most	ADV	B	_	10	advmod	_	_,
+ 10	famous	famous	ADJ	A	Degree=Pos	11	amod	_	_,
+ 11	tragedies	tragedy	NOUN	S	Number=Plur	5	nmod	_	_,
+ 12	,	,	PUNCT	FF	_	11	punct	_	_,
+ 13	Hamlet	Hamlet	PROPN	SP	_	11	appos	_	_,
+ 14	,	,	PUNCT	FF	_	3	punct	_	_,
+ 15	has	have	AUX	VA	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	18	aux	_	_,
+ 16	probably	probably	ADV	B	_	18	advmod	_	_,
+ 17	been	be	AUX	VA	Tense=Past|VerbForm=Part	18	aux:pass	_	_,
+ 18	discussed	discuss	VERB	V	Tense=Past|VerbForm=Part	0	root	_	_,
+ 19	more	more	ADV	B	Degree=Cmp	18	advmod	_	_,
+ 20	than	than	ADP	E	_	24	case	_	_,
+ 21	any	any	DET	DI	PronType=Ind	24	det	_	_,
+ 22	other	other	ADJ	A	Degree=Pos	24	amod	_	_,
+ 23	Shakespearean	Shakespearean	ADJ	A	Degree=Pos	24	amod	_	_,
+ 24	character	character	NOUN	S	Number=Sing	19	obl	_	_,
+ 25	,	,	PUNCT	FF	_	18	punct	_	_,
+ 26	especially	especially	ADV	B	_	30	advmod	_	_,
+ 27	for	for	ADP	E	_	30	case	_	_,
+ 28	his	his	DET	AP	Poss=Yes|PronType=Prs	30	nmod:poss	_	_,
+ 29	famous	famous	ADJ	A	Degree=Pos	30	amod	_	_,
+ 30	soliloquy	soliloquy	NOUN	S	Number=Sing	18	obl	_	_,
+ 31	which	which	PRON	PR	PronType=Rel	32	nsubj	_	_,
+ 32	begins	begin	VERB	V	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	30	acl:relcl	_	_,
+ 33	"	"	PUNCT	FB	_	35	punct	_	_,
+ 34	To	to	ADP	E	_	35	mark	_	_,
+ 35	be	be	VERB	V	VerbForm=Inf	32	parataxis	_	_,
+ 36	or	or	CCONJ	CC	_	39	cc	_	_,
+ 37	not	not	PART	PART	Polarity=Neg	39	advmod	_	_,
+ 38	to	to	PART	PART	_	39	mark	_	_,
+ 39	be	be	VERB	V	VerbForm=Inf	35	conj	_	_,
+ 40	;	;	PUNCT	FC	_	18	punct	_	_]
+  
+  Processed 1700/1748 sentences...
+
+[0	ROOT	ROOT	ROOT_UPOS	ROOT_CPOS	ROOT_FEATS	_	_	_	_,
+ 1	Samuel	Samuel	PROPN	SP	_	3	nsubj	_	_,
+ 2	Johnson	Johnson	PROPN	SP	_	1	flat	_	_,
+ 3	quoted	quote	VERB	V	Mood=Ind|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_,
+ 4	him	he	PRON	PE	Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	obj	_	_,
+ 5	more	more	ADV	B	Degree=Cmp	6	advmod	_	_,
+ 6	often	often	ADV	B	_	3	advmod	_	_,
+ 7	than	than	ADP	E	_	10	case	_	_,
+ 8	any	any	DET	DI	PronType=Ind	10	det	_	_,
+ 9	other	other	ADJ	A	Degree=Pos	10	amod	_	_,
+ 10	author	author	NOUN	S	Number=Sing	6	obl	_	_,
+ 11	in	in	ADP	E	_	14	case	_	_,
+ 12	his	his	PRON	PP	Poss=Yes|PronType=Prs	14	nmod:poss	_	_,
+ 13	A	a	DET	RI	Definite=Ind|Number=Sing|PronType=Art	14	det	_	_,
+ 14	Dictionary	dictionary	NOUN	S	Number=Sing	3	obl	_	_,
+ 15	of	of	ADP	E	_	18	case	_	_,
+ 16	the	the	DET	RD	Definite=Def|PronType=Art	18	det	_	_,
+ 17	English	English	ADJ	A	Degree=Pos	18	amod	_	_,
+ 18	Language	language	NOUN	S	Number=Sing	14	nmod	_	_,
+ 19	,	,	PUNCT	FF	_	14	punct	_	_,
+ 20	the	the	DET	RD	Definite=Def|PronType=Art	23	det	_	_,
+ 21	first	first	ADJ	NO	Degree=Pos|NumType=Ord	23	amod	_	_,
+ 22	serious	serious	ADJ	A	Degree=Pos	23	amod	_	_,
+ 23	work	work	NOUN	S	Number=Sing	14	appos	_	_,
+ 24	of	of	ADP	E	_	26	case	_	_,
+ 25	its	its	DET	AP	Number=Sing|Poss=Yes|PronType=Prs	26	nmod:poss	_	_,
+ 26	type	type	NOUN	S	Number=Sing	23	nmod	_	_,
+ 27	.	.	PUNCT	FS	_	3	punct	_	_]
+
+Generation complete. Total training samples: 81182
