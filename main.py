@@ -35,11 +35,6 @@ print ("Total training trees after removing non-projective sentences", len(train
 print ("Total dev trees after removing non-projective sentences", len(dev_trees))
 
 
-import os
-import pickle
-from conllu_reader import ConlluReader
-from algorithm import ArcEager
-
 def read_file(reader, path, inference):
     trees = reader.read_conllu_file(path, inference)
     print(f"Read a total of {len(trees)} sentences from {path}")
