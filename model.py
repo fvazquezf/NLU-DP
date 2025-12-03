@@ -166,7 +166,7 @@ class ParserMLP:
             monitor='val_loss', patience=2, restore_best_weights=True
         )
         
-        self.model.fit(
+        history = self.model.fit(
             x=X_train, 
             y={'action_output': Y_train[0], 'deprel_output': Y_train[1]},
             validation_data=(X_dev, {'action_output': Y_dev[0], 'deprel_output': Y_dev[1]}),
@@ -174,6 +174,7 @@ class ParserMLP:
             batch_size=self.batch_size,
             callbacks=[early_stopping]
         )
+        return history
 
     def evaluate(self, samples: list['Sample']):
         X, Y = self._vectorize(samples)
